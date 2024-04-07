@@ -5,7 +5,6 @@ set -e # Exit if any command fails
 rm -f disable-gutenberg-autosave.zip
 
 zip -r disable-gutenberg-autosave.zip \
-	index.php \
 	disable-gutenberg-autosave.php \
 	readme.txt \
 	build/* \

@@ -69,6 +69,7 @@ const INTERVAL_OPTIONS = [
 ];
 
 class DisableGutenbergAutosave extends Component {
+
 	constructor(props) {
 		super(props);
 

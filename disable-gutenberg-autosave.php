@@ -3,10 +3,10 @@
  * Plugin Name: Disable Gutenberg Autosave
  * Plugin URI: https://wordpress.org/plugins/disable-gutenberg-autosave
  * Description: Allows to disable Gutenberg autosave or change the interval.
- * Version: 1.0.11
+ * Version: 1.0.12
  * Text Domain: disable-gutenberg-autosave
  * Author: websevendev
- * Author URI: https://chap.website/author/websevendev
+ * Author URI: https://github.com/websevendev
  */
 
 namespace wsd\dga;
@@ -122,3 +122,17 @@ add_filter('block_editor_settings_all', function($settings) {
 	$settings['autosaveInterval'] = dga_get_autosave_interval();
 	return $settings;
 });
+
+/**
+ * Add GitHub link on the plugins page.
+ *
+ * @param array $plugin_meta
+ * @param string $plugin_file
+ * @return array
+ */
+add_filter('plugin_row_meta', function($plugin_meta, $plugin_file) {
+	if($plugin_file === 'disable-gutenberg-autosave/disable-gutenberg-autosave.php') {
+		$plugin_meta[] = '<a href="https://github.com/websevendev/disable-gutenberg-autosave" target="_blank" rel="noopener noreferrer">GitHub</a>';
+	}
+	return $plugin_meta;
+}, 10, 2);
