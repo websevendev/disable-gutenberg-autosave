@@ -4,6 +4,7 @@
 .gitignore
 .phpcs.xml
 package-lock.json
+pnpm-lock.yaml
 package.json
 webpack.config.js
 .vscode

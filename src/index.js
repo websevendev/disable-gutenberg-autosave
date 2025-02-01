@@ -10,7 +10,7 @@ import {
 import {
 	PluginSidebarMoreMenuItem,
 	PluginSidebar,
-} from '@wordpress/edit-post';
+} from '@wordpress/editor';
 
 import {
 	PanelBody,

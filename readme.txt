@@ -1,10 +1,10 @@
 === Disable Gutenberg Autosave ===
 Contributors: websevendev
 Tags: gutenberg, autosave, update, rest, revision
-Requires at least: 4.9.8
-Tested up to: 6.5
-Requires PHP: 5.4
-Stable tag: 1.0.12
+Requires at least: 5.0.0
+Tested up to: 6.7.1
+Requires PHP: 7.4
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,10 @@ The block editor will still use local autosave that saves a copy of the edited p
 2. Choose the autosave interval
 
 == Changelog ==
+
+= 1.0.13 =
+* Replace deprecated `PluginSidebarMoreMenuItem` and `PluginSidebar` components.
+* Update `@wordpress/*` packages.
 
 = 1.0.12 =
 * Update `@wordpress/*` packages.
