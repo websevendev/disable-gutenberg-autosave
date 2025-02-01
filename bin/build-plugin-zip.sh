@@ -7,8 +7,7 @@ rm -f disable-gutenberg-autosave.zip
 zip -r disable-gutenberg-autosave.zip \
 	disable-gutenberg-autosave.php \
 	readme.txt \
-	build/* \
-	src/*
+	build/*
 
 unzip disable-gutenberg-autosave.zip -d disable-gutenberg-autosave
 rm disable-gutenberg-autosave.zip
