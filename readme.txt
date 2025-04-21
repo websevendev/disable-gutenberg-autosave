@@ -1,5 +1,5 @@
 === Disable Gutenberg Autosave ===
-Contributors: websevendev, skadev
+Contributors: skadev
 Tags: gutenberg, autosave, update, rest, revision
 Requires at least: 5.0
 Tested up to: 6.7

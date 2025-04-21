@@ -6,8 +6,8 @@
  * Version: 1.0.14
  * Requires PHP: 7.4
  * Text Domain: disable-gutenberg-autosave
- * Author: websevendev
- * Author URI: https://github.com/websevendev
+ * Author: skadev
+ * Author URI: https://profiles.wordpress.org/skadev/
  */
 
 namespace wsd\dga;
@@ -129,7 +129,7 @@ add_filter('block_editor_settings_all', function($settings) {
  */
 add_filter('plugin_row_meta', function($plugin_meta, $plugin_file) {
 	if($plugin_file === 'disable-gutenberg-autosave/disable-gutenberg-autosave.php') {
-		$plugin_meta[] = '<a href="https://github.com/websevendev/disable-gutenberg-autosave" target="_blank" rel="noopener noreferrer">GitHub</a>';
+		$plugin_meta[] = '<a href="https://github.com/ska-dev-1/disable-gutenberg-autosave" target="_blank" rel="noopener noreferrer">GitHub</a>';
 	}
 	return $plugin_meta;
 }, 10, 2);

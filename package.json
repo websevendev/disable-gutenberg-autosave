@@ -1,16 +1,9 @@
 {
 	"name": "disable-gutenberg-autosave",
-	"version": "1.0.0",
-	"description": "Allows to control Gutenberg autosave interval or disable autosave completely.",
-	"author": "websevendev <websevendev@gmail.com>",
-	"license": "GPL-2.0-or-later",
-	"main": "src/index.js",
 	"scripts": {
 		"start": "wp-scripts start --stats=minimal",
 		"start:hot": "wp-scripts start --hot --allowed-hosts all",
-		"dev": "pnpm run start",
-		"build": "wp-scripts build --stats=errors-only",
-		"release": "pnpm run build && wp dist-archive . ./disable-gutenberg-autosave.zip"
+		"build": "wp-scripts build --stats=errors-only && wp-scripts plugin-zip"
 	},
 	"devDependencies": {
 		"@wordpress/api-fetch": "^7.22.0",
